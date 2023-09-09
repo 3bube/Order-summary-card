@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Bootstrap.min.css" />
+
+    <title>Frontend Mentor | Order Summary Card</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+      body {
+        font-family: "Red Hat Display", sans-serif;
+        padding: 0;
+        margin: 0;
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .link {
+        margin-left: 90px;
+      }
+      .cancel-link {
+        color: rgb(173, 172, 172);
+        cursor: pointer;
+        margin: 20px 0;
+      }
+
+      .cancel-link:active {
+        color: black;
+      }
+
+      .btn-active {
+        padding: 10px 100px;
+        font-size: 15px;
+        background: hsl(245, 75%, 52%);
+        color: white;
+      }
+
+      .btn-active:active {
+        opacity: 0.8;
+      }
+
+      .change-link:active {
+        opacity: 0.8;
+      }
+      @media (min-width: 200px) and (max-width: 900px) {
+        .card-card {
+          width: 20rem;
+        }
+
+        .image {
+          width: 20rem;
+          padding-top: 5px;
+          margin: 0 auto;
+        }
+        .title {
+          font-size: 26px;
+        }
+
+        .text {
+          font-size: 19px;
+          white-space: normal;
+        }
+
+        .link {
+          margin-left: 10px;
+        }
+      }
+
+      @media (min-width: 901px) and (max-width: 2000px) {
+        .card-card {
+          width: 28rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-xl position-relative">
+      <div
+        class="card card-card position-fixed top-50 start-50 translate-middle rounded-5 shadow"
+      >
+        <img
+          src="images/illustration-hero.svg"
+          class="card-img-top img-fluid rounded-top-5 image"
+          alt="..."
+        />
+
+        <div class="card-body text-center">
+          <div style="font-weight: 900" class="card-title fs-3 py-3">
+            Order Summary
+          </div>
+          <div class="card-text px-4">
+            <p class="text-secondary">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like !
+            </p>
+
+            <ul class="list-group">
+              <li
+                style="background-color: hsl(225, 100%, 98%)"
+                class="list-group-item d-flex border-0 py-4 align-items-center list"
+              >
+                <img class="img-fluid" src="images/icon-music.svg" alt="" />
+                <span style="font-weight: 900" class="ms-3"
+                  >Annual plan<br />
+                  <span class="fw-light text-secondary">$59.99/year</span>
+                </span>
+                <a
+                  style="color: hsl(245, 75%, 52%)"
+                  href="#"
+                  class="link fw-bold change-link"
+                  >Change</a
+                >
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="border-0 rounded-3 my-3 fw-bold btn-active"
+            >
+              Procced to Payment</button
+            ><br />
+            <p href="" class="text-decoration-none fw-bold cancel-link">
+              Cancel Order
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
